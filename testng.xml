@@ -20,7 +20,21 @@
 
 
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+	</test> 
+
+	<test name="TestFirefoxBrowser">
+		<parameter name="url" value="https://www.bestbuy.com/"></parameter>
+
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+
+			<class name="testcases.TC001_LoginTest" />
+			<class name="testcases.TC002_ValidateMenuLinksTest" />
+			<class name="testcases.TC006_ValidateBottomLinksTest" />
+			<class name="testcases.TC003_AddItemBySearchTest" />
+			<class name="testcases.TC004_AddItemByBrandTest" />
+			<class name="testcases.TC005_DepartAddItemTest" />
+
+		</classes>
+	</test>
+</suite> 
