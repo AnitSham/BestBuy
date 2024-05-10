@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-10T11:58:06 IST" name="Suite" finished-at="2024-05-10T12:02:19 IST" duration-ms="253754">
+    <groups>
+    </groups>
+    <test started-at="2024-05-10T11:58:06 IST" name="TestChromeBrowser" finished-at="2024-05-10T12:02:19 IST" duration-ms="253754">
+      <class name="testcases.TC004_AddItemByBrandTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC004_AddItemByBrandTest@6cc4cdb9]" started-at="2024-05-10T11:58:06 IST" name="setup" finished-at="2024-05-10T11:58:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC004_AddItemByBrandTest@6cc4cdb9]" started-at="2024-05-10T12:00:17 IST" name="browserLaunch" finished-at="2024-05-10T12:00:20 IST" duration-ms="3055" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="brandtest()[pri:4, instance:testcases.TC004_AddItemByBrandTest@6cc4cdb9]" started-at="2024-05-10T12:00:20 IST" name="brandtest" finished-at="2024-05-10T12:01:04 IST" duration-ms="43788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- brandtest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TC004_AddItemByBrandTest@6cc4cdb9]" started-at="2024-05-10T12:01:04 IST" name="closeBrowser" finished-at="2024-05-10T12:01:05 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC004_AddItemByBrandTest -->
+      <class name="testcases.TC005_DepartAddItemTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC005_DepartAddItemTest@28194a50]" started-at="2024-05-10T11:58:06 IST" name="setup" finished-at="2024-05-10T11:58:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC005_DepartAddItemTest@28194a50]" started-at="2024-05-10T12:01:05 IST" name="browserLaunch" finished-at="2024-05-10T12:01:08 IST" duration-ms="2797" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="departtest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:5, instance:testcases.TC005_DepartAddItemTest@28194a50]" started-at="2024-05-10T12:01:08 IST" name="departtest" data-provider="getData" finished-at="2024-05-10T12:02:19 IST" duration-ms="71150" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9345363554]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10011012013014000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[User]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#number"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aca443e1840df0448b77f59da7e0db94, findElement {using=id, value=number}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61359}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61359/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aca443e1840df0448b77f59da7e0db94]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#number"}
+  (Session info: chrome=124.0.6367.119)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.17.0', revision: 'e52b1be057*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aca443e1840df0448b77f59da7e0db94, findElement {using=id, value=number}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61359}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61359/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aca443e1840df0448b77f59da7e0db94
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
+at utility.UtilityClass.sendKeys(UtilityClass.java:82)
+at pages.DepartAddItemPage.debitcard(DepartAddItemPage.java:123)
+at testcases.TC005_DepartAddItemTest.departtest(TC005_DepartAddItemTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- departtest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TC005_DepartAddItemTest@28194a50]" started-at="2024-05-10T12:02:19 IST" name="closeBrowser" finished-at="2024-05-10T12:02:19 IST" duration-ms="387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC005_DepartAddItemTest -->
+      <class name="testcases.TC001_LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC001_LoginTest@769a1df5]" started-at="2024-05-10T11:58:06 IST" name="setup" finished-at="2024-05-10T11:58:06 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC001_LoginTest@769a1df5]" started-at="2024-05-10T11:58:07 IST" name="browserLaunch" finished-at="2024-05-10T11:58:11 IST" duration-ms="4021" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="choosecountrytest(java.lang.String,java.lang.String)[pri:-1, instance:testcases.TC001_LoginTest@769a1df5]" started-at="2024-05-10T11:58:11 IST" name="choosecountrytest" data-provider="getData" finished-at="2024-05-10T11:58:24 IST" duration-ms="13347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test@21*1987&2056]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- choosecountrytest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TC001_LoginTest@769a1df5]" started-at="2024-05-10T11:58:24 IST" name="closeBrowser" finished-at="2024-05-10T11:58:25 IST" duration-ms="919" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC001_LoginTest -->
+      <class name="testcases.TC006_ValidateBottomLinksTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC006_ValidateBottomLinksTest@e3b3b2f]" started-at="2024-05-10T11:58:06 IST" name="setup" finished-at="2024-05-10T11:58:06 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC006_ValidateBottomLinksTest@e3b3b2f]" started-at="2024-05-10T11:59:11 IST" name="browserLaunch" finished-at="2024-05-10T11:59:15 IST" duration-ms="3430" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="validatetestlink()[pri:2, instance:testcases.TC006_ValidateBottomLinksTest@e3b3b2f]" started-at="2024-05-10T11:59:15 IST" name="validatetestlink" finished-at="2024-05-10T11:59:36 IST" duration-ms="21093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatetestlink -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TC006_ValidateBottomLinksTest@e3b3b2f]" started-at="2024-05-10T11:59:36 IST" name="closeBrowser" finished-at="2024-05-10T11:59:36 IST" duration-ms="448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC006_ValidateBottomLinksTest -->
+      <class name="testcases.TC003_AddItemBySearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC003_AddItemBySearchTest@50f6ac94]" started-at="2024-05-10T11:58:06 IST" name="setup" finished-at="2024-05-10T11:58:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC003_AddItemBySearchTest@50f6ac94]" started-at="2024-05-10T11:59:36 IST" name="browserLaunch" finished-at="2024-05-10T11:59:40 IST" duration-ms="3708" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="searchitemtest(java.lang.String)[pri:3, instance:testcases.TC003_AddItemBySearchTest@50f6ac94]" started-at="2024-05-10T11:59:40 IST" name="searchitemtest" data-provider="getData" finished-at="2024-05-10T12:00:17 IST" duration-ms="36848" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[One Plus]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchitemtest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TC003_AddItemBySearchTest@50f6ac94]" started-at="2024-05-10T12:00:17 IST" name="closeBrowser" finished-at="2024-05-10T12:00:17 IST" duration-ms="399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC003_AddItemBySearchTest -->
+      <class name="testcases.TC002_ValidateMenuLinksTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.TC002_ValidateMenuLinksTest@50029372]" started-at="2024-05-10T11:58:06 IST" name="setup" finished-at="2024-05-10T11:58:06 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="browserLaunch(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC002_ValidateMenuLinksTest@50029372]" started-at="2024-05-10T11:58:25 IST" name="browserLaunch" finished-at="2024-05-10T11:58:28 IST" duration-ms="3044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.bestbuy.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="validatetest()[pri:1, instance:testcases.TC002_ValidateMenuLinksTest@50029372]" started-at="2024-05-10T11:58:28 IST" name="validatetest" finished-at="2024-05-10T11:59:11 IST" duration-ms="42554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatetest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.TC002_ValidateMenuLinksTest@50029372]" started-at="2024-05-10T11:59:11 IST" name="closeBrowser" finished-at="2024-05-10T11:59:11 IST" duration-ms="581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.TC002_ValidateMenuLinksTest -->
+    </test> <!-- TestChromeBrowser -->
+  </suite> <!-- Suite -->
+</testng-results>
